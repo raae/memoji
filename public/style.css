@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  height: 19vw;
+  width: 19vw;
+  margin: 1vw;
+  background: pink;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.selected,
+.card.paired {
+  background: lavenderblush;
+}
+
+.card img {
+  display: none;
+  height: 55%;
+}
+
+.card.selected img,
+.card.paired img {
+  display: block;
+}
+
+.card.paired img {
+  opacity: 0.5;
+}
